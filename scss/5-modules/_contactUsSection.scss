@@ -1,0 +1,103 @@
+#contactUsSection {
+  color: white;
+  padding-bottom: 6rem;
+
+  background-color: rgb(14, 180, 147);
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  label {
+    color: white;
+  }
+  #name {
+    width: 20rem;
+  }
+}
+
+.carousel-cell {
+  position: relative;
+}
+
+#welcomeMsg {
+  position: absolute;
+  top: 30rem;
+  left: 50rem;
+  font-size: 5.9rem;
+  @include media('<=1735px') {
+    left: 45rem;
+    font-size: 4.9rem;
+  }
+  @include media('<=1511px') {
+    left: 25rem;
+    font-size: 4.9rem;
+  }
+  @include media('<=1411px') {
+    left: 10rem;
+    top: 10rem;
+    font-size: 4.9rem;
+  }
+  @include media('<=857px') {
+    top: 15rem;
+    left: 10rem;
+    font-size: 3.9rem;
+  }
+  @include media('<=432px') {
+    top: 12rem;
+    left: 5rem;
+    font-size: 2.9rem;
+  }
+  z-index: 100000;
+  color: white;
+  font-weight: bolder;
+}
+
+#formNdInfo {
+  @include flexContainer;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  #leftSection {
+    button {
+      margin-top: 2rem;
+    }
+    margin: 2rem;
+    input:not([type]):focus:not([readonly]),
+    input[type='text']:not(.browser-default):focus:not([readonly]),
+    input[type='password']:not(.browser-default):focus:not([readonly]),
+    input[type='email']:not(.browser-default):focus:not([readonly]),
+    input[type='url']:not(.browser-default):focus:not([readonly]),
+    input[type='time']:not(.browser-default):focus:not([readonly]),
+    input[type='date']:not(.browser-default):focus:not([readonly]),
+    input[type='datetime']:not(.browser-default):focus:not([readonly]),
+    input[type='datetime-local']:not(.browser-default):focus:not([readonly]),
+    input[type='tel']:not(.browser-default):focus:not([readonly]),
+    input[type='number']:not(.browser-default):focus:not([readonly]),
+    input[type='search']:not(.browser-default):focus:not([readonly]),
+    textarea.materialize-textarea:focus:not([readonly]) {
+      border-bottom: 1px solid black;
+      box-shadow: 0 1px 0 0 black;
+    }
+    input {
+      border-bottom: 1px solid white;
+      box-shadow: 0 1px 0 0 white;
+      width: 50rem;
+    }
+
+    label {
+      font-size: 1.5rem;
+    }
+  }
+  #rightSection {
+    h1 {
+      color: black;
+      font-size: 1.7rem;
+      text-align: left;
+    }
+    p {
+      color: black;
+      font-size: 1.6rem;
+    }
+  }
+}
