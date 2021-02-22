@@ -71,7 +71,7 @@ background-image: url(../img/cursor/cursorSix.png);
   
 </head>
   <body>
-    <p id="position">Test</p>
+    <!-- <p id="position">Test</p> -->
     
     <!-- cursor  -->
     <div id="box"></div>
@@ -82,8 +82,8 @@ background-image: url(../img/cursor/cursorSix.png);
     var x = event.clientX;
     var y = event.clientY;
 
-    document.getElementById('position').innerHTML =
-      ' X = ' + x + '][ Y = ' + y;
+    // document.getElementById('position').innerHTML =
+    //   ' X = ' + x + '][ Y = ' + y;
 
     let box = document.getElementById('box');
     box.style.top = `${y }px`;
