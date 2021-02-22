@@ -1,14 +1,15 @@
 #contactUsSection {
-  color: white;
+  padding-top: 2rem;
+  color: $royal_white;
   padding-bottom: 6rem;
 
-  background-color: rgb(14, 180, 147);
+  background-color: $royal_blue;
   h1 {
     font-size: 3.5rem;
     text-align: center;
   }
   label {
-    color: white;
+    color: $royal_white;
   }
   #name {
     width: 20rem;
@@ -48,11 +49,14 @@
     font-size: 2.9rem;
   }
   z-index: 100000;
-  color: white;
+  color: $royal_white;
   font-weight: bolder;
 }
 
 #formNdInfo {
+  @include media('<=tablet') {
+    padding: 5rem;
+  }
   @include flexContainer;
   flex-wrap: wrap;
   align-items: center;
@@ -76,13 +80,16 @@
     input[type='number']:not(.browser-default):focus:not([readonly]),
     input[type='search']:not(.browser-default):focus:not([readonly]),
     textarea.materialize-textarea:focus:not([readonly]) {
-      border-bottom: 1px solid black;
-      box-shadow: 0 1px 0 0 black;
+      border-bottom: 1px solid $royal_black;
+      box-shadow: 0 1px 0 0 $royal_black;
     }
     input {
-      border-bottom: 1px solid white;
-      box-shadow: 0 1px 0 0 white;
-      width: 50rem;
+      color: white;
+      @include media('<=700px') {
+        width: 20rem;
+      }
+      border-bottom: 1px solid $royal_white;
+      box-shadow: 0 1px 0 0 $royal_white;
     }
 
     label {
@@ -91,12 +98,12 @@
   }
   #rightSection {
     h1 {
-      color: black;
+      color: $royal_black;
       font-size: 1.7rem;
       text-align: left;
     }
     p {
-      color: black;
+      color: $royal_black;
       font-size: 1.6rem;
     }
   }

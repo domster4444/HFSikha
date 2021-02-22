@@ -5,4 +5,13 @@
 }
 :root {
   font-size: 10px;
+  // @include media('<=1400px') {
+  //   font-size: 8px;
+  // }
+  // @include media('<=1200px') {
+  //   font-size: 6px;
+  // }
+  // @include media('<=1000px') {
+  //   font-size: 5.5px;
+  // }
 }

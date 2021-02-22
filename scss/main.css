@@ -4872,18 +4872,14 @@ small {
   border-radius: 0 0 2px 2px;
 }
 
-.card
-.card-action
-a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
   color: #ffab40;
   margin-right: 24px;
   transition: color 0.3s ease;
   text-transform: uppercase;
 }
 
-.card
-.card-action
-a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
   color: #ffd8a6;
 }
 
@@ -6141,8 +6137,7 @@ input[type='url']:not(.browser-default):focus:not([readonly]) + label,
 input[type='time']:not(.browser-default):focus:not([readonly]) + label,
 input[type='date']:not(.browser-default):focus:not([readonly]) + label,
 input[type='datetime']:not(.browser-default):focus:not([readonly]) + label,
-input[type='datetime-local']:not(.browser-default):focus:not([readonly])
-+ label,
+input[type='datetime-local']:not(.browser-default):focus:not([readonly]) + label,
 input[type='tel']:not(.browser-default):focus:not([readonly]) + label,
 input[type='number']:not(.browser-default):focus:not([readonly]) + label,
 input[type='search']:not(.browser-default):focus:not([readonly]) + label,
@@ -6267,73 +6262,49 @@ input:not([type]):focus.valid ~ .helper-text[data-success],
 input:not([type]).invalid ~ .helper-text[data-error],
 input:not([type]):focus.invalid ~ .helper-text[data-error],
 input[type='text']:not(.browser-default).valid ~ .helper-text[data-success],
-input[type='text']:not(.browser-default):focus.valid
-~ .helper-text[data-success],
+input[type='text']:not(.browser-default):focus.valid ~ .helper-text[data-success],
 input[type='text']:not(.browser-default).invalid ~ .helper-text[data-error],
-input[type='text']:not(.browser-default):focus.invalid
-~ .helper-text[data-error],
+input[type='text']:not(.browser-default):focus.invalid ~ .helper-text[data-error],
 input[type='password']:not(.browser-default).valid ~ .helper-text[data-success],
-input[type='password']:not(.browser-default):focus.valid
-~ .helper-text[data-success],
+input[type='password']:not(.browser-default):focus.valid ~ .helper-text[data-success],
 input[type='password']:not(.browser-default).invalid ~ .helper-text[data-error],
-input[type='password']:not(.browser-default):focus.invalid
-~ .helper-text[data-error],
+input[type='password']:not(.browser-default):focus.invalid ~ .helper-text[data-error],
 input[type='email']:not(.browser-default).valid ~ .helper-text[data-success],
-input[type='email']:not(.browser-default):focus.valid
-~ .helper-text[data-success],
+input[type='email']:not(.browser-default):focus.valid ~ .helper-text[data-success],
 input[type='email']:not(.browser-default).invalid ~ .helper-text[data-error],
-input[type='email']:not(.browser-default):focus.invalid
-~ .helper-text[data-error],
+input[type='email']:not(.browser-default):focus.invalid ~ .helper-text[data-error],
 input[type='url']:not(.browser-default).valid ~ .helper-text[data-success],
-input[type='url']:not(.browser-default):focus.valid
-~ .helper-text[data-success],
+input[type='url']:not(.browser-default):focus.valid ~ .helper-text[data-success],
 input[type='url']:not(.browser-default).invalid ~ .helper-text[data-error],
-input[type='url']:not(.browser-default):focus.invalid
-~ .helper-text[data-error],
+input[type='url']:not(.browser-default):focus.invalid ~ .helper-text[data-error],
 input[type='time']:not(.browser-default).valid ~ .helper-text[data-success],
-input[type='time']:not(.browser-default):focus.valid
-~ .helper-text[data-success],
+input[type='time']:not(.browser-default):focus.valid ~ .helper-text[data-success],
 input[type='time']:not(.browser-default).invalid ~ .helper-text[data-error],
-input[type='time']:not(.browser-default):focus.invalid
-~ .helper-text[data-error],
+input[type='time']:not(.browser-default):focus.invalid ~ .helper-text[data-error],
 input[type='date']:not(.browser-default).valid ~ .helper-text[data-success],
-input[type='date']:not(.browser-default):focus.valid
-~ .helper-text[data-success],
+input[type='date']:not(.browser-default):focus.valid ~ .helper-text[data-success],
 input[type='date']:not(.browser-default).invalid ~ .helper-text[data-error],
-input[type='date']:not(.browser-default):focus.invalid
-~ .helper-text[data-error],
+input[type='date']:not(.browser-default):focus.invalid ~ .helper-text[data-error],
 input[type='datetime']:not(.browser-default).valid ~ .helper-text[data-success],
-input[type='datetime']:not(.browser-default):focus.valid
-~ .helper-text[data-success],
+input[type='datetime']:not(.browser-default):focus.valid ~ .helper-text[data-success],
 input[type='datetime']:not(.browser-default).invalid ~ .helper-text[data-error],
-input[type='datetime']:not(.browser-default):focus.invalid
-~ .helper-text[data-error],
-input[type='datetime-local']:not(.browser-default).valid
-~ .helper-text[data-success],
-input[type='datetime-local']:not(.browser-default):focus.valid
-~ .helper-text[data-success],
-input[type='datetime-local']:not(.browser-default).invalid
-~ .helper-text[data-error],
-input[type='datetime-local']:not(.browser-default):focus.invalid
-~ .helper-text[data-error],
+input[type='datetime']:not(.browser-default):focus.invalid ~ .helper-text[data-error],
+input[type='datetime-local']:not(.browser-default).valid ~ .helper-text[data-success],
+input[type='datetime-local']:not(.browser-default):focus.valid ~ .helper-text[data-success],
+input[type='datetime-local']:not(.browser-default).invalid ~ .helper-text[data-error],
+input[type='datetime-local']:not(.browser-default):focus.invalid ~ .helper-text[data-error],
 input[type='tel']:not(.browser-default).valid ~ .helper-text[data-success],
-input[type='tel']:not(.browser-default):focus.valid
-~ .helper-text[data-success],
+input[type='tel']:not(.browser-default):focus.valid ~ .helper-text[data-success],
 input[type='tel']:not(.browser-default).invalid ~ .helper-text[data-error],
-input[type='tel']:not(.browser-default):focus.invalid
-~ .helper-text[data-error],
+input[type='tel']:not(.browser-default):focus.invalid ~ .helper-text[data-error],
 input[type='number']:not(.browser-default).valid ~ .helper-text[data-success],
-input[type='number']:not(.browser-default):focus.valid
-~ .helper-text[data-success],
+input[type='number']:not(.browser-default):focus.valid ~ .helper-text[data-success],
 input[type='number']:not(.browser-default).invalid ~ .helper-text[data-error],
-input[type='number']:not(.browser-default):focus.invalid
-~ .helper-text[data-error],
+input[type='number']:not(.browser-default):focus.invalid ~ .helper-text[data-error],
 input[type='search']:not(.browser-default).valid ~ .helper-text[data-success],
-input[type='search']:not(.browser-default):focus.valid
-~ .helper-text[data-success],
+input[type='search']:not(.browser-default):focus.valid ~ .helper-text[data-success],
 input[type='search']:not(.browser-default).invalid ~ .helper-text[data-error],
-input[type='search']:not(.browser-default):focus.invalid
-~ .helper-text[data-error],
+input[type='search']:not(.browser-default):focus.invalid ~ .helper-text[data-error],
 textarea.materialize-textarea.valid ~ .helper-text[data-success],
 textarea.materialize-textarea:focus.valid ~ .helper-text[data-success],
 textarea.materialize-textarea.invalid ~ .helper-text[data-error],
@@ -6362,8 +6333,7 @@ input[type='date']:not(.browser-default):focus.valid ~ .helper-text:after,
 input[type='datetime']:not(.browser-default).valid ~ .helper-text:after,
 input[type='datetime']:not(.browser-default):focus.valid ~ .helper-text:after,
 input[type='datetime-local']:not(.browser-default).valid ~ .helper-text:after,
-input[type='datetime-local']:not(.browser-default):focus.valid
-~ .helper-text:after,
+input[type='datetime-local']:not(.browser-default):focus.valid ~ .helper-text:after,
 input[type='tel']:not(.browser-default).valid ~ .helper-text:after,
 input[type='tel']:not(.browser-default):focus.valid ~ .helper-text:after,
 input[type='number']:not(.browser-default).valid ~ .helper-text:after,
@@ -6394,8 +6364,7 @@ input[type='date']:not(.browser-default):focus.invalid ~ .helper-text:after,
 input[type='datetime']:not(.browser-default).invalid ~ .helper-text:after,
 input[type='datetime']:not(.browser-default):focus.invalid ~ .helper-text:after,
 input[type='datetime-local']:not(.browser-default).invalid ~ .helper-text:after,
-input[type='datetime-local']:not(.browser-default):focus.invalid
-~ .helper-text:after,
+input[type='datetime-local']:not(.browser-default):focus.invalid ~ .helper-text:after,
 input[type='tel']:not(.browser-default).invalid ~ .helper-text:after,
 input[type='tel']:not(.browser-default):focus.invalid ~ .helper-text:after,
 input[type='number']:not(.browser-default).invalid ~ .helper-text:after,
@@ -6476,9 +6445,7 @@ textarea.materialize-textarea + label:after,
   transform-origin: 0 0;
 }
 
-.input-field
-> input[type]:-webkit-autofill:not(.browser-default):not([type='search'])
-+ label,
+.input-field > input[type]:-webkit-autofill:not(.browser-default):not([type='search']) + label,
 .input-field > input[type='date']:not(.browser-default) + label,
 .input-field > input[type='time']:not(.browser-default) + label {
   transform: translateY(-14px) scale(0.8);
@@ -6564,12 +6531,8 @@ textarea.materialize-textarea + label:after,
 }
 
 .input-field input[type='search']:focus:not(.browser-default) + label i,
-.input-field
-input[type='search']:focus:not(.browser-default)
-~ .mdi-navigation-close,
-.input-field
-input[type='search']:focus:not(.browser-default)
-~ .material-icons {
+.input-field input[type='search']:focus:not(.browser-default) ~ .mdi-navigation-close,
+.input-field input[type='search']:focus:not(.browser-default) ~ .material-icons {
   color: #444;
 }
 
@@ -11445,6 +11408,24 @@ https://flickity.metafizzy.co
  */
 /* 2D TRANSITIONS */
 /* Grow */
+.hvr-underline-from-left::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  right: 100%;
+  bottom: 0px;
+  background: white !important;
+  height: 4px;
+  transition-property: right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+nav ul a:hover {
+  background-color: transparent;
+}
+
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
@@ -15145,11 +15126,42 @@ template {
   font-size: 10px;
 }
 
+.nav-wrapper {
+  padding-bottom: 7rem !important;
+}
+
+Quick sand .quick_base, Quick sand .quick-regular, Quick sand .quick-semi-bold, Quick sand .quick-bold {
+  font-family: 'Poppins', sans-serif;
+}
+
+.quick-regular {
+  font-weight: 400;
+}
+
+.quick-semi-bold {
+  font-weight: 500;
+}
+
+.quick-bold {
+  font-weight: 600;
+}
+
+.sidenav li > a {
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  line-height: 48px;
+  padding: 0px 110px;
+}
+
 #logoFutsal {
   height: 5rem;
 }
 
 .nav-wrapper {
+  padding-bottom: 7rem;
   background-color: #0eb493;
 }
 
@@ -15157,7 +15169,66 @@ li a {
   font-size: 2rem !important;
 }
 
+#forgotPasswordSectionWrapper #loginPage {
+  background-image: url(../../img/glassBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#forgotPasswordSectionWrapper #loginSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100vh;
+}
+
+#forgotPasswordSectionWrapper #loginSection #loginBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  width: 57rem;
+  height: 64rem;
+  text-align: center;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@media (max-width: 853px) {
+  #forgotPasswordSectionWrapper #loginSection #loginBox {
+    width: 100%;
+  }
+}
+
+#forgotPasswordSectionWrapper #loginSection #loginBox form h1 {
+  font-size: 2.5rem;
+}
+
+#forgotPasswordSectionWrapper #loginSection #loginBox form input {
+  margin: 2rem 0rem;
+}
+
+#forgotPasswordSectionWrapper #loginSection #loginBox form input[type='email'] {
+  margin-bottom: 5rem;
+}
+
+#forgotPasswordSectionWrapper #loginSection #loginBox form a {
+  width: 50%;
+}
+
 #contactUsSection {
+  padding-top: 2rem;
   color: white;
   padding-bottom: 6rem;
   background-color: #0eb493;
@@ -15238,6 +15309,12 @@ li a {
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  #formNdInfo {
+    padding: 5rem;
+  }
+}
+
 #formNdInfo #leftSection {
   margin: 2rem;
 }
@@ -15264,9 +15341,15 @@ li a {
 }
 
 #formNdInfo #leftSection input {
+  color: white;
   border-bottom: 1px solid white;
   box-shadow: 0 1px 0 0 white;
-  width: 50rem;
+}
+
+@media (max-width: 700px) {
+  #formNdInfo #leftSection input {
+    width: 20rem;
+  }
 }
 
 #formNdInfo #leftSection label {
@@ -15282,6 +15365,60 @@ li a {
 #formNdInfo #rightSection p {
   color: black;
   font-size: 1.6rem;
+}
+
+#loginPage {
+  background-image: url(../../img/glassBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#loginSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100vh;
+}
+
+#loginSection #loginBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  width: 57rem;
+  height: 64rem;
+  text-align: center;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@media (max-width: 853px) {
+  #loginSection #loginBox {
+    width: 100%;
+  }
+}
+
+#loginSection #loginBox form input {
+  margin: 2rem 0rem;
+}
+
+#loginSection #loginBox form input[type='password'] {
+  margin-bottom: 7rem;
+}
+
+#loginSection #loginBox form a {
+  width: 50%;
 }
 
 #mapViewBeginningSection {

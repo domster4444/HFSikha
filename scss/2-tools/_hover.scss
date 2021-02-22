@@ -17,6 +17,23 @@
  */
 /* 2D TRANSITIONS */
 /* Grow */
+.hvr-underline-from-left::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  right: 100%;
+  bottom: 0px;
+  background: white !important;
+  height: 4px;
+  transition-property: right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+nav ul a:hover {
+  background-color: transparent;
+}
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
